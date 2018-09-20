@@ -59,6 +59,7 @@
             this.logInButton.TabIndex = 1;
             this.logInButton.Text = "Log in";
             this.logInButton.UseVisualStyleBackColor = false;
+            this.logInButton.Click += new System.EventHandler(this.logInButton_Click);
             // 
             // UserNamelabel
             // 
@@ -91,6 +92,7 @@
             // 
             this.PasswordTextBox.Location = new System.Drawing.Point(179, 142);
             this.PasswordTextBox.Name = "PasswordTextBox";
+            this.PasswordTextBox.PasswordChar = '*';
             this.PasswordTextBox.Size = new System.Drawing.Size(100, 22);
             this.PasswordTextBox.TabIndex = 5;
             // 

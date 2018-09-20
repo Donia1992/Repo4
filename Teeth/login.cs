@@ -16,5 +16,12 @@ namespace Teeth
         {
             InitializeComponent();
         }
+
+        private void logInButton_Click(object sender, EventArgs e)
+        {
+            Program.hem = new Home();
+            Program.hem.Show();
+            this.Hide();
+        }
     }
 }

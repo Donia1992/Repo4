@@ -26,5 +26,18 @@ namespace Teeth
         {
 
         }
+
+        private void loggaUtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.enlogin.Show();
+        }
+
+        private void hjälpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            XRay xRay = new XRay();
+            xRay.Show();
+        }
     }
 }
