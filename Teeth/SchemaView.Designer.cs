@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.MonthCalendar monthCalendar1;
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -40,22 +39,23 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnDay3 = new System.Windows.Forms.Button();
             this.listView2 = new System.Windows.Forms.ListView();
-            this.btnDay2 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.btnDay1 = new System.Windows.Forms.Button();
             this.listViewUserDetails = new System.Windows.Forms.ListView();
             this.listViewTime = new System.Windows.Forms.ListView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.lblDay1 = new System.Windows.Forms.Label();
+            this.lblDay2 = new System.Windows.Forms.Label();
+            this.lblDay3 = new System.Windows.Forms.Label();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel2.Controls.Add(this.lblDay3);
+            this.panel2.Controls.Add(this.lblDay2);
+            this.panel2.Controls.Add(this.lblDay1);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
@@ -66,14 +66,11 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.btnDay3);
             this.panel2.Controls.Add(this.listView2);
-            this.panel2.Controls.Add(this.btnDay2);
             this.panel2.Controls.Add(this.listView1);
-            this.panel2.Controls.Add(this.btnDay1);
             this.panel2.Controls.Add(this.listViewUserDetails);
             this.panel2.Controls.Add(this.listViewTime);
-            this.panel2.Location = new System.Drawing.Point(253, 30);
+            this.panel2.Location = new System.Drawing.Point(260, 21);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(747, 686);
             this.panel2.TabIndex = 14;
@@ -188,19 +185,6 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "08:00";
             // 
-            // btnDay3
-            // 
-            this.btnDay3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDay3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDay3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDay3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnDay3.Location = new System.Drawing.Point(528, 3);
-            this.btnDay3.Name = "btnDay3";
-            this.btnDay3.Size = new System.Drawing.Size(213, 31);
-            this.btnDay3.TabIndex = 20;
-            this.btnDay3.Text = "22 Saturday";
-            this.btnDay3.UseVisualStyleBackColor = false;
-            // 
             // listView2
             // 
             this.listView2.AccessibleName = "listViewDay";
@@ -215,19 +199,6 @@
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
             // 
-            // btnDay2
-            // 
-            this.btnDay2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDay2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDay2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDay2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnDay2.Location = new System.Drawing.Point(309, 3);
-            this.btnDay2.Name = "btnDay2";
-            this.btnDay2.Size = new System.Drawing.Size(213, 31);
-            this.btnDay2.TabIndex = 18;
-            this.btnDay2.Text = "21 Friday";
-            this.btnDay2.UseVisualStyleBackColor = false;
-            // 
             // listView1
             // 
             this.listView1.AccessibleName = "listViewDay";
@@ -241,19 +212,6 @@
             this.listView1.TabIndex = 17;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // btnDay1
-            // 
-            this.btnDay1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDay1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDay1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDay1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnDay1.Location = new System.Drawing.Point(90, 3);
-            this.btnDay1.Name = "btnDay1";
-            this.btnDay1.Size = new System.Drawing.Size(213, 31);
-            this.btnDay1.TabIndex = 16;
-            this.btnDay1.Text = "20 Thursday";
-            this.btnDay1.UseVisualStyleBackColor = false;
             // 
             // listViewUserDetails
             // 
@@ -286,37 +244,60 @@
             this.listViewTime.UseCompatibleStateImageBehavior = false;
             this.listViewTime.View = System.Windows.Forms.View.Details;
             // 
-            // panel1
+            // lblDay1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(monthCalendar1);
-            this.panel1.Location = new System.Drawing.Point(3, 30);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(259, 686);
-            this.panel1.TabIndex = 13;
+            this.lblDay1.AutoSize = true;
+            this.lblDay1.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDay1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblDay1.Location = new System.Drawing.Point(130, 8);
+            this.lblDay1.Name = "lblDay1";
+            this.lblDay1.Size = new System.Drawing.Size(136, 29);
+            this.lblDay1.TabIndex = 32;
+            this.lblDay1.Text = "11 September";
+            // 
+            // lblDay2
+            // 
+            this.lblDay2.AutoSize = true;
+            this.lblDay2.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDay2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblDay2.Location = new System.Drawing.Point(348, 8);
+            this.lblDay2.Name = "lblDay2";
+            this.lblDay2.Size = new System.Drawing.Size(136, 29);
+            this.lblDay2.TabIndex = 33;
+            this.lblDay2.Text = "12 September";
+            // 
+            // lblDay3
+            // 
+            this.lblDay3.AutoSize = true;
+            this.lblDay3.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDay3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblDay3.Location = new System.Drawing.Point(571, 8);
+            this.lblDay3.Name = "lblDay3";
+            this.lblDay3.Size = new System.Drawing.Size(136, 29);
+            this.lblDay3.TabIndex = 34;
+            this.lblDay3.Text = "13 September";
             // 
             // monthCalendar1
             // 
-            monthCalendar1.BackColor = System.Drawing.Color.White;
-            monthCalendar1.CalendarDimensions = new System.Drawing.Size(1, 3);
-            monthCalendar1.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            monthCalendar1.ForeColor = System.Drawing.Color.Gray;
-            monthCalendar1.Location = new System.Drawing.Point(11, 112);
-            monthCalendar1.Name = "monthCalendar1";
-            monthCalendar1.TabIndex = 0;
+            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(1, 2);
+            this.monthCalendar1.Location = new System.Drawing.Point(18, 186);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 15;
+            this.monthCalendar1.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateSelected);
             // 
             // SchemaView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1003, 719);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ClientSize = new System.Drawing.Size(1019, 722);
+            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Name = "SchemaView";
             this.Text = "SchemaView";
+            this.Load += new System.EventHandler(this.SchemaView_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -334,13 +315,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnDay3;
         private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.Button btnDay2;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button btnDay1;
         private System.Windows.Forms.ListView listViewUserDetails;
         private System.Windows.Forms.ListView listViewTime;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblDay3;
+        private System.Windows.Forms.Label lblDay2;
+        private System.Windows.Forms.Label lblDay1;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }
