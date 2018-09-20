@@ -37,6 +37,7 @@
             this.hjälpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.listBox2 = new System.Windows.Forms.ListBox();
+            this.loggaUtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +72,8 @@
             this.homeToolStripMenuItem,
             this.patienterToolStripMenuItem,
             this.schemaToolStripMenuItem,
-            this.hjälpToolStripMenuItem});
+            this.hjälpToolStripMenuItem,
+            this.loggaUtToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(826, 28);
@@ -99,8 +101,9 @@
             // hjälpToolStripMenuItem
             // 
             this.hjälpToolStripMenuItem.Name = "hjälpToolStripMenuItem";
-            this.hjälpToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
-            this.hjälpToolStripMenuItem.Text = "Hjälp";
+            this.hjälpToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
+            this.hjälpToolStripMenuItem.Text = "Röntgenbilder";
+            this.hjälpToolStripMenuItem.Click += new System.EventHandler(this.hjälpToolStripMenuItem_Click);
             // 
             // label2
             // 
@@ -124,10 +127,18 @@
             this.listBox2.Size = new System.Drawing.Size(349, 148);
             this.listBox2.TabIndex = 4;
             // 
+            // loggaUtToolStripMenuItem
+            // 
+            this.loggaUtToolStripMenuItem.Name = "loggaUtToolStripMenuItem";
+            this.loggaUtToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
+            this.loggaUtToolStripMenuItem.Text = "Logga ut";
+            this.loggaUtToolStripMenuItem.Click += new System.EventHandler(this.loggaUtToolStripMenuItem_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(826, 302);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.label2);
@@ -155,5 +166,6 @@
         private System.Windows.Forms.ToolStripMenuItem hjälpToolStripMenuItem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ToolStripMenuItem loggaUtToolStripMenuItem;
     }
 }

@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Teeth
 {
-    public partial class login : Form
+    public partial class SchemaView : Form
     {
-        public login()
+        public SchemaView()
         {
             InitializeComponent();
-        }
-
-        private void logInButton_Click(object sender, EventArgs e)
-        {
-            Program.hem = new Home();
-            Program.hem.Show();
-            this.Hide();
         }
     }
 }

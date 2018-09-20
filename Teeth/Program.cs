@@ -8,6 +8,8 @@ namespace Teeth
 {
     static class Program
     {
+        public static login enlogin;
+        public static Home hem;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +18,8 @@ namespace Teeth
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login());
+            enlogin = new login();
+            Application.Run(enlogin);
         }
     }
 }

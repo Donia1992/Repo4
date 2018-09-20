@@ -59,6 +59,7 @@
             this.logInButton.TabIndex = 1;
             this.logInButton.Text = "Log in";
             this.logInButton.UseVisualStyleBackColor = false;
+            this.logInButton.Click += new System.EventHandler(this.logInButton_Click);
             // 
             // UserNamelabel
             // 

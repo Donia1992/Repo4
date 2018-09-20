@@ -27,6 +27,13 @@ namespace Teeth
             pictureBox1.Image = Image.FromFile(path);
         }
 
+        private void XRay_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            Program.hem.Show();
+            
+        }
+
         private void FillComboBox()
         {
             //DirectoryInfo("")
