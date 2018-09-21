@@ -76,5 +76,12 @@ namespace Teeth
                 Add(day1, day2, day3);
             }
         }
+
+        private void SchemaView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Hide();
+            Home hm = new Home();
+            hm.Show();
+        }
     }
 }

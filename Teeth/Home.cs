@@ -39,5 +39,19 @@ namespace Teeth
             XRay xRay = new XRay();
             xRay.Show();
         }
+
+        private void schemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hide();
+            SchemaView sw = new SchemaView();
+            sw.Show();
+        }
+
+        private void patienterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Cutomer ct = new Cutomer();
+            ct.Show();
+        }
     }
 }

@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "",
             ""}, -1);
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "",
             ""}, -1);
@@ -61,12 +61,14 @@
             this.col1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.col2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.col3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label11 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.lblYear);
             this.panel2.Controls.Add(this.lblDay3);
             this.panel2.Controls.Add(this.lblDay2);
@@ -260,9 +262,9 @@
             this.listViewCalender.HideSelection = false;
             this.listViewCalender.HoverSelection = true;
             this.listViewCalender.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3});
+            listViewItem19,
+            listViewItem20,
+            listViewItem21});
             this.listViewCalender.Location = new System.Drawing.Point(90, 51);
             this.listViewCalender.MultiSelect = false;
             this.listViewCalender.Name = "listViewCalender";
@@ -282,7 +284,7 @@
             this.listViewTime.Location = new System.Drawing.Point(4, 42);
             this.listViewTime.MultiSelect = false;
             this.listViewTime.Name = "listViewTime";
-            this.listViewTime.Size = new System.Drawing.Size(213, 643);
+            this.listViewTime.Size = new System.Drawing.Size(213, 652);
             this.listViewTime.TabIndex = 21;
             this.listViewTime.UseCompatibleStateImageBehavior = false;
             this.listViewTime.View = System.Windows.Forms.View.Details;
@@ -292,7 +294,7 @@
             this.monthCalendar1.BackColor = System.Drawing.Color.Salmon;
             this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(1, 2);
             this.monthCalendar1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monthCalendar1.Location = new System.Drawing.Point(18, 231);
+            this.monthCalendar1.Location = new System.Drawing.Point(17, 201);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 15;
             this.monthCalendar1.TitleBackColor = System.Drawing.Color.Salmon;
@@ -315,6 +317,17 @@
             this.col3.Text = "";
             this.col3.Width = 208;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.DimGray;
+            this.label11.Location = new System.Drawing.Point(-3, 632);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(76, 22);
+            this.label11.TabIndex = 36;
+            this.label11.Text = "Övrigt";
+            // 
             // SchemaView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -324,7 +337,9 @@
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.panel2);
             this.Name = "SchemaView";
-            this.Text = "SchemaView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Schema";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SchemaView_FormClosing);
             this.Load += new System.EventHandler(this.SchemaView_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -355,5 +370,6 @@
         private System.Windows.Forms.ColumnHeader col1;
         private System.Windows.Forms.ColumnHeader col2;
         private System.Windows.Forms.ColumnHeader col3;
+        private System.Windows.Forms.Label label11;
     }
 }
