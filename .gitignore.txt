@@ -1,5 +1,0 @@
-Teeth/.vs/
-Teeth/.bin/
-Teeth.Teeth.csproj
-Teeth/obj/
-Teeth/Teeth.sln
