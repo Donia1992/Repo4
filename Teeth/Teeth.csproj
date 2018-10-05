@@ -51,7 +51,7 @@
     <Compile Include="Customer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customer.Designer.cs">
+    <Compile Include="Customer.designer.cs">
       <DependentUpon>Customer.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
@@ -65,6 +65,12 @@
     </Compile>
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchemaView.Designer.cs">
+      <DependentUpon>SchemaView.cs</DependentUpon>
     </Compile>
     <Compile Include="XRay.cs">
       <SubType>Form</SubType>
@@ -92,6 +98,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SchemaView.resx">
+      <DependentUpon>SchemaView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XRay.resx">
       <DependentUpon>XRay.cs</DependentUpon>
     </EmbeddedResource>

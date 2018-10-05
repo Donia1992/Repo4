@@ -50,7 +50,7 @@ namespace Teeth
         private void patienterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Hide();
-            Cutomer ct = new Cutomer();
+            Customer ct = new Customer();
             ct.Show();
         }
     }
